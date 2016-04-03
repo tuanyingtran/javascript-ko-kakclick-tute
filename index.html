@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gil Options</title>
+	<meta charset="utf-8"/>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class='container'>
+		<!-- Cat list view -->
+		<h1 class='h2'>Js Kat List:</h2>
+		<ul class='h3' id='cat-list' data-bind='foreach:catList'>
+			<li data-bind='text:name, click: $parent.setCurrentCat'></li>
+		</ul>
+		<!-- list items, cats, will be generated in js View -->
+		<hr>
+		<!-- Cat view -->
+		<div class='datalist' id='cat' data-bind='with:currentCat'>
+			<h3 class='h3' id='cat-name' data-bind='text:name'></h3>
+			<div class='h4' id='cat-title' data-bind='text:title'></div>
+			<div class='h3 text-success' id='click-count' 
+				data-bind='text:clickCount'></div>
+			
+			<div>
+				<h4 class= 'h4'>Nicknames: </h4>
+				<ul class='h5' data-bind ='foreach:nickname'>
+					<li data-bind='text:$data'></li>
+				</ul>
+			</div>
+			
+			<img class='img' id='cat-img' src='' alt='Img Placeholder' 
+				data-bind='click: $parent.incrementCounter,
+							attr:{src:imgSrc}'>
+		</div>	
+		
+	</div><!-- container -->
+  
+  <!-- 
+  <button class='btn button-default glyphicon glyphicon-send'>&nbspClick</button>
+  <script src='katCliqApp.js'>
+  </script>-->
+	
+	<!--Organizational js -->
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/knockout.js'></script>
+	
+    <script src='katCliqAppKo.js'></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+        {
+            clickCount : 0,
+            name : 'Alpha',
+            imgSrc : 'img/Placeholder-female1.png'
+        },
+        {
+            clickCount : 0,
+            name : 'Bravo',
+            imgSrc : 'img/Placeholder-flwrs1.png'
+        },
+        {
+            clickCount : 0,
+            name : 'Charlie',
+            imgSrc : 'img/Placeholder-general1.png'
+        },
+        {
+            clickCount : 0,
+            name : 'Echo',
+            imgSrc : 'img/Placeholder-location1.png'
+        }
+		
+ ]
